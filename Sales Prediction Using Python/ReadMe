@@ -1,0 +1,9 @@
+For this dataset in sales prediction using python, we used SARIMAX and XGBoost models to predict sales. We first loaded the data set and cleaned it,
+handling null values, then we performed exploratory analysis on the data to find trend and seasonality, we did correlation analysis and time series analysis 
+and also tested its stationarity using Dickey-Fuller test, and we found the following insights:
+1. Storetype a has highest customer and sales¶
+2. Storetype b has highest SalesPerCustomer
+3. There is no promotion offer in Saturday and Sunday
+4. Customers are going to buy their goods in tuesday on promotional offer.
+Then, we fit our data using SARIMAX, making acf and pacf plots, and then fit our data into a model using XGBoost then we hyperytuned that model and after
+hypertuning, we were able to reduce RMSE from 1216.08 to 1106.41 which is better.
